@@ -1,0 +1,129 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.navbar .brand-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navbar-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar-links li {
+    margin-left: 1rem;
+}
+
+.navbar-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-links a:hover {
+    background-color: #575757;
+    border-radius: 5px;
+}
+
+.hero {
+    position: relative;
+    color: white;
+    text-align: center;
+    padding: 5rem 2rem;
+    height: 100vh; /* Ensure the hero section takes the full viewport height */
+}
+
+.hero img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero h1, .hero p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: rgba(0, 0, 0, 0.5);
+    padding: 1rem;
+    border-radius: 30px;
+}
+
+.hero p {
+    top: 60%;
+}
+
+section {
+    padding: 2rem;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.sponsor-images, .partner-images, .team-images {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* Ensure images are in one row */
+    overflow-x: auto; /* Enable horizontal scroll for smaller screens */
+    margin: 0 -0.5rem; /* Adjust margins to prevent overflow */
+}
+.sponsor-images img, .partner-images img, .team-images img {
+    flex: 1;
+    max-width: 30%;
+    height: 50vh;
+    object-fit: cover;
+    margin: 0 0.5rem; /* Adjust margins for spacing between images */
+}
+
+.team-member {
+    text-align: center;
+    flex: 1; /* Ensure each team member is equally spaced */
+}
+
+.academy-content {
+    width: 95%; /* Adjust width as needed */
+    margin: 0 auto; /* Center the container horizontally */
+    text-align: left; /* Align text to the left */
+    padding: 20px; /* Add padding for spacing */
+    background-color: #f9f9f9; /* Example background color */
+    border: 0 solid #ccc; /* Example border */
+    box-shadow: 0 0 10px rgba(0,0,0,0.1); /* Example box shadow */
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.5rem 0; /* Reduce padding */
+    font-size: 0.8rem; /* Reduce font size */
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
